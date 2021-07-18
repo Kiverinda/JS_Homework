@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Homework 2</title>
+  </head>
+  <body>
+  <h1>Homework 2</h1>
+  <div class="container">
+    <div class="question">
+      <h3>1. Почему код дает именно такие результаты?</h3>
+      <b>var a = 1, b = 1, c, d;</b>
+      <ol>
+        <li>c = ++a; alert(c); //2</li>
+        <li>d = b++; alert(d); //1</li>
+        <li>c = (2+ ++a); alert(c); //5</li>
+        <li>d = (2+ b++); alert(d); //4</li>
+        <li>alert(a); //3</li>
+        <li>alert(b); //3</li>
+      </ol>
+    </div>
+    <div class="answer">
+      <h3>Ответ</h3>
+        <ol>
+          <li>
+            Переменная а увеличивается на 1 и присваивается
+            переменной с
+          </li>
+          <li>
+            Переменной d присваевается переменная b, после 
+            этого переменная b увеличивается на 1
+          </li>
+          <li>
+            К двум прибавляется увеличенная на 1 переменная а, которая
+            после первого пункта уже равна 2.
+            Результат сложения присваивается переменной с
+          </li>
+          <li>
+            К двум прибавляется переменная b, равная после второго 
+            пункта 2.
+            Результат сложения присваивается переменной  d 
+            После этого переменная b увеличивается на 1 
+          </li>
+          <li>
+            После 3 пункта переменная a равна 3
+          </li>
+          <li>
+            После 3 пункта переменная b равна 3
+          </li>
+        </ol>
+    </div>
+  </div>
+  <div class="container">
+    <div class="question">
+      <h3>2. Чему будет равен x?</h3>
+      <p>var a = 2;</p>
+      <p>var x = 1 + (a *= 2);</p>
+    </div>
+    <div class="answer">
+      <h3>Ответ</h3>
+      <p>
+        Выражение в скобках эквивалентно следующей записи
+      </p>
+      <p>
+        a = a * 2;
+      </p>
+      <p>
+        В результате х будет равен 5
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="question">
+      <h3>3. Объявить две целочисленные переменные a и b 
+        и задать им произвольные начальные значения. 
+        Затем написать скрипт, который работает по следующему принципу:</h3>
+        <ol>
+          <li>если a и b положительные, вывести их разность;</li>
+          <li>если а и b отрицательные, вывести их произведение;</li>
+          <li>если а и b разных знаков, вывести их сумму;</li>
+        </ol>
+        <b>ноль можно считать положительным числом. </b>
+    </div>
+    <div class="answer">
+      <h3>Решение</h3>
+      <p><a href="task-3.js" target="_blank">Ссылка на файл task-3.js</a></p>
+      <button onclick="functionToExecScriptTask(3)">
+        Запуск скрипта
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="question">
+      <h3>### 4. Присвоить переменной а значение в промежутке [0..15].
+        С помощью оператора switch организовать вывод чисел от a до 15. 
+      </h3>
+    </div>
+    <div class="answer">
+      <h3>Решение</h3>
+      <p><a href="task-4.js" target="_blank">Ссылка на файл task-4.js</a></p>
+      <button onclick="functionToExecScriptTask(4)">
+        Запуск скрипта
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="question">
+      <h3>### 5. Реализовать основные 4 арифметические операции 
+        в виде функций с двумя параметрами. 
+        Обязательно использовать оператор return. 
+      </h3>
+    </div>
+    <div class="answer">
+      <h3>Решение</h3>
+      <p><a href="task-5.js" target="_blank">Ссылка на файл task-5.js</a></p>
+      <button onclick="functionToExecScriptTask(5)">
+        Демонстрация работы скрипта
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="question">
+      <h3>### 6. Реализовать функцию с тремя параметрами: 
+        function mathOperation(arg1, arg2, operation), 
+        где arg1, arg2 – значения аргументов, operation – строка с названием операции. 
+        В зависимости от переданного значения операции выполнить одну из арифметических 
+        операций (использовать функции из пункта 3) и вернуть полученное значение 
+        (использовать switch).  
+      </h3>
+    </div>
+    <div class="answer">
+      <h3>Решение</h3>
+      <p><a href="task-6.js" target="_blank">Ссылка на файл task-6.js</a></p>
+      <button onclick="functionToExecScriptTask(6)">
+        Запуск скрипта
+      </button>
+    </div>
+  </div>
+    <div class="container">
+    <div class="question">
+      <h3>
+        ### 7. *Сравнить null и 0. Попробуйте объяснить результат.   
+      </h3>
+    </div>
+    <div class="answer">
+      <h3>Решение</h3>
+      <p>Сравним null и 0</p>
+      <ol>
+        <li>null > 0</li>
+        <li>null == 0</li>
+        <li>null >= 0</li>
+      </ol>
+      <button onclick="functionToExecScriptTask(7)">
+        Результат сравнения
+      </button>
+      <p>Нестрогое равенство и сравнения > < >= <= работают по-разному. 
+      Сравнения преобразуют null в число, рассматривая его как 0. 
+      Поэтому выражение (3) null >= 0 истинно, а null > 0 ложно.
+      С другой стороны, для нестрогого равенства == значений undefined и null 
+      действует особое правило: эти значения ни к чему не приводятся, они равны 
+      друг другу и не равны ничему другому. Поэтому null == 0 ложно.</p>
+      <a href="task-7.js" target="_blank">Ссылка на файл task-7.js</a>
+    </div>
+  </div>
+      <div class="container">
+    <div class="question">
+      <h3>
+        ### 8. *С помощью рекурсии организовать функцию возведения числа в степень. 
+        Формат: function power(val, pow), где val – заданное число, pow – степень.  
+      </h3>
+    </div>
+    <div class="answer">
+      <h3>Решение</h3>
+      <p><a href="task-8.js" target="_blank">Ссылка на файл task-8.js</a></p>
+      <button onclick="functionToExecScriptTask(8)">
+        Запуск скрипта
+      </button>
+    </div>
+  </div>
+  <script defer src="script.js"></script>
 </body>
 </html>
