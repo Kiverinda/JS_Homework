@@ -15,13 +15,6 @@ function functionToExecScriptTask(x) {
             break;
         case 4:
             myScript.src = 'task-4.js';
-            break;
-        case 5:
-            myScript.src = 'task-5.js';
-            break;
-        case 6:
-            myScript.src = 'task-6.js';
-            break;
     }
 
     htmlHeader.appendChild(myScript);

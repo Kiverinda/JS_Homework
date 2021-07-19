@@ -20,6 +20,10 @@ body {
     padding: 0;
 }
 
+.liter {
+    list-style-type: lower-alpha;
+}
+
 li {
     padding-left: 10px;
 }

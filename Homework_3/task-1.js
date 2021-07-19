@@ -8,9 +8,26 @@ if (count == 'undefined') {
 arr = [2];
 count = 3;
 
-display(100);
+getArrayPrime(100);
 
-alert('Простые числа:' + arr);
+display(arr);
+
+function display(arr) {
+    let i = 0;
+    while (i < arr.length) {
+        console.log(arr[i]);
+        i++;
+    }
+}
+
+function getArrayPrime(num) {
+    while (count < num) {
+        if (isPrime(count)) {
+            arr.push(count);
+        }
+        count += 2;
+    }
+}
 
 function isPrime(num) {
     for (var i = 0; i < arr.length; i++) {
@@ -19,13 +36,4 @@ function isPrime(num) {
         }
     }
     return true;
-}
-
-function display(n) {
-    while (count < n) {
-        if (isPrime(count)) {
-            arr.push(count);
-        }
-        count += 2;
-    } // use arr result on your own
 }
