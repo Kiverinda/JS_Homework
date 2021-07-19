@@ -1,0 +1,25 @@
+body {
+    font-size: 18px;
+}
+
+.container {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.answer,
+.question {
+    width: 50%;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.answer pre {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding-left: 10px;
+}
